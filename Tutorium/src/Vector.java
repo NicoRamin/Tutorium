@@ -6,7 +6,7 @@ public class Vector {
 		int[] vector1 = {5, 6, 7};
 		int[] vector2 = {1, 2, 3};
 		int[] vector3 = vectorProdukt(vector1, vector2);
-		System.out.println(Arrays.toString(Vector3));
+		System.out.println(Arrays.toString(vector3));
 	}
 
 	public static void skalar(int[] vector, int skalar) {
@@ -44,7 +44,7 @@ public class Vector {
 		} else return false;
 	}
 
-	public static int vectorLength(int[] vector1) {
+	public static double vectorLength(int[] vector1) {
 		return Math.sqrt( Math.pow(vector1[0], 2) + Math.pow(vector1[1], 2) + Math.pow(vector1[2], 2) );
 	}
 }

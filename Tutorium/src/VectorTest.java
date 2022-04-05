@@ -19,7 +19,7 @@ class VectorTest {
 	public void Vectorproduct() {
 		int[] productVector = {4, -8, 0};
 		Vector v = new Vector();
-		Assert.assertArrayEquals(v.vectorproduct(vector1, vector2 ), productVector);
+		Assert.assertArrayEquals(v.vectorProdukt(vector1, vector2 ), productVector);
 	}
 
 	@Test
@@ -32,10 +32,10 @@ class VectorTest {
 
 	@Test
 	public void vectorLength() {
-		int length = Math.sqrt(14);
+		double length = Math.sqrt(14);
 		Vector v = new Vector();
 		v.vectorLength(vector2);
-		Assert.assertEquals(v.vectorLength(vector2), length);
+		Assert.assertEquals(v.vectorLength(vector2), length, 0);
 		}
 
 
