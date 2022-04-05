@@ -27,7 +27,16 @@ class VectorTest {
 		int[] skalarVector = {15, 18, 21};
 		Vector v = new Vector();
 		v.skalar(vector1, 3);
-
 		Assert.assertArrayEquals(vector1, skalarVector);
 		}
+
+	@Test
+	public void vectorLength() {
+		int length = Math.sqrt(14);
+		Vector v = new Vector();
+		v.vectorLength(vector2);
+		Assert.assertEquals(v.vectorLength(vector2), length);
+		}
+
+
 }
