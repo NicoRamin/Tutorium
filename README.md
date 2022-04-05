@@ -8,4 +8,4 @@
 ## Elemente die ggf. beinhaltet werden können
 
 - Konkatenation von String
-- 
+
