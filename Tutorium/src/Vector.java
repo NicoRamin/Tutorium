@@ -5,7 +5,7 @@ public class Vector {
 
 		int[] vector1 = {5, 6, 7};
 		int[] vector2 = {1, 2, 3};
-		int[] vector3 = vectorProdukt(vector1, vector2);
+		int[] vector3 = vectorProduct(vector1, vector2);
 		System.out.println(Arrays.toString(vector3));
 	}
 
@@ -29,7 +29,7 @@ public class Vector {
 		return returnVector;
 	}
 
-	public static int[] vectorProdukt(int[] vector1, int[] vector2) {
+	public static int[] vectorProduct(int[] vector1, int[] vector2) {
 		int[] returnVector = new int [vector1.length];
 		returnVector[0] = (vector1[1] * vector2[2]) - (vector1[2] * vector2[1]);
 		returnVector[1] = (vector1[2] * vector2[0]) - (vector1[0] * vector2[2]);
@@ -44,7 +44,11 @@ public class Vector {
 		} else return false;
 	}
 
-	public static double vectorLength(int[] vector1) {
-		return Math.sqrt( Math.pow(vector1[0], 2) + Math.pow(vector1[1], 2) + Math.pow(vector1[2], 2) );
+	public static double vectorLength(int[] vector) {
+		int sum = 0;
+		for(int i = 0; i < vector.length; i++) {
+			sum += Math.pow(vector[i], 2);
+		}
+		return Math.sqrt(sum);
 	}
 }
