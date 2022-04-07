@@ -27,18 +27,18 @@ class VectorTest {
 
 	@Test
 	public void vectorProductThreeD() {
-		int[] productVector = {4, -8, 4};
 		Vector v = new Vector();
 		int[] returnValue = v.vectorProductThreeD(vector1, vector2);
-		Assert.assertEquals();
+		int[] vector = {4, -8, 4};
+		Assert.assertArrayEquals(returnValue, vector );
 	}
 	
 	@Test
 	public void vectorProdutTwoD() {
-		int[] productVector = {4, -8, 4};
 		Vector v = new Vector();
-		String returnValue = v.vectorProdutTwoD(vector3, vector4);
-		Assert.assertEquals();
+		int returnValue = v.vectorProdutTwoD(vector3, vector4);
+		
+		Assert.assertEquals(returnValue, -792);
 	}
 
 	@Test

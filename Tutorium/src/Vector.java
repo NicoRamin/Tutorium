@@ -42,7 +42,7 @@ public class Vector {
 	}
 
 
-	private static int vectorProdutTwoD(int[] vector1, int[] vector2) {
+	public static int vectorProdutTwoD(int[] vector1, int[] vector2) {
 		return (vector1[0] * vector2[1] - vector2[0] * vector1[1]);
 	}
 
