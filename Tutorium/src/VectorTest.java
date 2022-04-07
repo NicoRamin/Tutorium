@@ -26,10 +26,19 @@ class VectorTest {
 	}
 
 	@Test
-	public void Vectorproduct() {
+	public void vectorProductThreeD() {
 		int[] productVector = {4, -8, 4};
 		Vector v = new Vector();
-		Assert.assertArrayEquals(v.vectorProduct(vector1, vector2 ), productVector);
+		int[] returnValue = v.vectorProductThreeD(vector1, vector2);
+		Assert.assertEquals();
+	}
+	
+	@Test
+	public void vectorProdutTwoD() {
+		int[] productVector = {4, -8, 4};
+		Vector v = new Vector();
+		String returnValue = v.vectorProdutTwoD(vector3, vector4);
+		Assert.assertEquals();
 	}
 
 	@Test

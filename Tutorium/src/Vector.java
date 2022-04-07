@@ -4,9 +4,8 @@ public class Vector {
 	public static void main(String[] args) {
 
 		int[] vector1 = {5, 6, 7};
-		int[] vector2 = {1, 2, 3};
-		int[] vector3 = vectorProduct(vector1, vector2);
-		System.out.println(Arrays.toString(vector3));
+		int[] vector2 = {1, 2, 5};
+		vectorProduct(vector1, vector2);
 	}
 
 	public static void skalar(int[] vector, int skalar) {
@@ -28,8 +27,26 @@ public class Vector {
 
 		return returnVector;
 	}
+	
+	public static void vectorProduct(int[] vector1, int [] vector2 ) {
+		if(vector1.length == 2) {
+			
+			int vectorProdutTwoD = vectorProdutTwoD(vector1, vector2);
+			System.out.println(vectorProdutTwoD);
+		}else {
+			String vectorProductThreeD = Arrays.toString(vectorProductThreeD(vector1, vector2)); 
+			System.out.println(vectorProductThreeD);
 
-	public static int[] vectorProduct(int[] vector1, int[] vector2) {
+		}
+		
+	}
+
+
+	private static int vectorProdutTwoD(int[] vector1, int[] vector2) {
+		return (vector1[0] * vector2[1] - vector2[0] * vector1[1]);
+	}
+
+	public static int[] vectorProductThreeD(int[] vector1, int[] vector2) {
 		int[] returnVector = new int [vector1.length];
 		returnVector[0] = (vector1[1] * vector2[2]) - (vector1[2] * vector2[1]);
 		returnVector[1] = (vector1[2] * vector2[0]) - (vector1[0] * vector2[2]);
