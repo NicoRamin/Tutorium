@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class Vector {
+	
 	public static void main(String[] args) {
 
 		int[] vector1 = {5, 6, 7};
@@ -9,31 +10,31 @@ public class Vector {
 	}
 
 	public static void skalar(int[] vector, int skalar) {
-		for(int i = 0; i < vector.length; i++) {
+		for (int i = 0; i < vector.length; i++) {
 			vector[i] = vector[i] * skalar;
 		}
 	}
 
 	public int[] sumVectors(int[] vector1, int[] vector2) {
-		if(lengthCheck(vector1, vector2) == false) {
+		if (lengthCheck(vector1, vector2) == false) {
 			System.out.println("Nicht die selbe Laenge!");
 			return new int[0];
 		}
 
 		int[] returnVector = new int [vector1.length];
-		for(int i= 0; i < vector1.length; i++) {
+		for (int i= 0; i < vector1.length; i++) {
 			returnVector[i] = vector1[i] + vector2[i];
 		}
 
 		return returnVector;
 	}
 	
-	public static void vectorProduct(int[] vector1, int [] vector2 ) {
-		if(vector1.length == 2) {
+	public static void vectorProduct(int[] vector1, int[] vector2 ) {
+		if (vector1.length == 2) {
 			
 			int vectorProdutTwoD = vectorProdutTwoD(vector1, vector2);
 			System.out.println(vectorProdutTwoD);
-		}else {
+		} else {
 			String vectorProductThreeD = Arrays.toString(vectorProductThreeD(vector1, vector2)); 
 			System.out.println(vectorProductThreeD);
 
@@ -63,7 +64,7 @@ public class Vector {
 
 	public static double vectorLength(int[] vector) {
 		int sum = 0;
-		for(int i = 0; i < vector.length; i++) {
+		for (int i = 0; i < vector.length; i++) {
 			sum += Math.pow(vector[i], 2);
 		}
 		return Math.sqrt(sum);
