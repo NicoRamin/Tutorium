@@ -1,5 +1,27 @@
-Aufgabe 3 Testfälle:
-----------------------
+Aufgabe 1:
+-----------
+Gegeben sind folgende 3D-Vektoren:
+vector1 = 5, 6, 7
+vector2 = 1, 2, 5
+
+Schreiben sie ein Unterprogramm 'vectorProduct' vom typ void, welches das Produkt beider Vektoren berechnet. Als Parameter empfngt die Methode beide Vektoren.
+Schreibe sie die Methode so dass sie sowohl 2D-Vektoren als auch 3D-Vektoren berechnen kann. 
+Für beide Berechnungen ist in dieser Methode jeweils ein Aufruf einer weiteren Methode von Vorteil.
+
+
+Aufgabe 2:
+-----------
+Da wir bei Herr Todorov nicht in Mathe versagen wollen, gibt es weitere Aufgaben zum Thema Vektoren.
+- Schreiben sie ein Unterprogramm 'skalar' vom typ void, welches als Parameter einen Vektor und einen Faktor als ganze Zahl bekommt.
+Diser berechnet anschließend das Skalar.
+- Schreiben sie ein Unterprogramm 'sumVectors' vom typ int[], welches als Parameter zwei Vektoren bekommt. Berechnet wird die Summe der Vektoren.
+Nur Vektoren der gleichen Dimension dürfen summiert werden ! (s.u.)
+- Für die Überprufung der gleichen Dimension schreiben sie ein Unterprogramm 'lengthCheck' vom typ boolean, welches als Parameter zwei Vektoren bekommt.
+- Schreiben sie ein Unterprogramm 'vectorLength' vom typ double, welches als Parameter einen Vektor bekommt und die Laenge eines Vektoren berechnet.
+
+
+Aufgabe 3:
+-----------
 
 Schreiben sie Testfälle. Gegeben sind 2x 3D-Vektoren und 2x 2D-Vektoren:
 vector1 = 5, 6, 7
@@ -7,13 +29,13 @@ vector2 = 1, 2, 3
 vector3 = 12, 24
 vector4 = 37, 8
 
-Testen sie die Summe der 3D-Vektoren 1 und 2.
-Testen sie die Summe der 2D-Vektoren 3 und 4.
+- Testen sie die Summe der 3D-Vektoren 1 und 2.
+- Testen sie die Summe der 2D-Vektoren 3 und 4.
 
-Testen sie das Produkt der 3D-Vektoren 1 und 2.
-Testen sie das Produkt der 2D-Vektoren 3 und 4.
+- Testen sie das Produkt der 3D-Vektoren 1 und 2.
+- Testen sie das Produkt der 2D-Vektoren 3 und 4.
 
-Testen sie das Skalarprodukt des 3D-Vektors 1 mit dem Faktor 3.
+- Testen sie das Skalarprodukt des 3D-Vektors 1 mit dem Faktor 3.
 
-Testen sie die Vektorlänge des 3D-Vektors 2.
-Testen sie die Vektorlänge des 2D-Vektors 3.
+- Testen sie die Vektorlänge des 3D-Vektors 2.
+- Testen sie die Vektorlänge des 2D-Vektors 3.
