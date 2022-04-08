@@ -24,6 +24,7 @@ Aufgabe 3:
 -----------
 Zeichnen sie für die Methoden 'skalar', 'lengthCheck' und 'vectorLength' Aktivitätsdiagramme.
 
+
 Aufgabe 4:
 -----------
 
