@@ -27,6 +27,12 @@ Zeichnen sie für die Methoden 'skalar', 'lengthCheck' und 'vectorLength' Aktivi
 
 Aufgabe 4:
 -----------
+Gegeben sei folgender String = "H5e6r843r To04d5o8r46ov i4431s1t P2r5o14351fe3s35s8o3r fu15e43r M153a5t35h3e".
+Schreiben sie eine Methode "encrypt", bei welchem Aufruf ein String ohne Zahlen turückgegeben wird. Stichwort Regex.
+Die Methode wird in Main aufgerufen und in der Kommandozeile, dessen Rückgabewert ausgegeben.
+
+Aufgabe 5:
+-----------
 
 Schreiben sie Testfälle. Gegeben sind 2x 3D-Vektoren und 2x 2D-Vektoren:
 vector1 = 5, 6, 7

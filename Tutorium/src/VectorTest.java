@@ -63,4 +63,11 @@ class VectorTest {
 		v.vectorLength(vector3);
 		Assert.assertEquals(v.vectorLength(vector3), length, 0); //0 Kulanz
 	}
+
+	@Test
+	public void encrpytTest() {
+		String test = "B3ei1s5p1ie3l";
+		String output = encrypt(test);
+		Assert.assertEquals(output, "Beispiel"); 
+	}
 }
