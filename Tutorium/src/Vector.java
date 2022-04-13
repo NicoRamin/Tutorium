@@ -15,13 +15,25 @@ public class Vector {
 		//String[] studenten = {"191672@hs-mannheim.de", "221731@stud.hs-mannheim.de"};
 		//System.out.println( Arrays.toString( catchMatrikelnummer(studenten) ) );
 		
-		System.out.println(matrikel("2013362"));
+		System.out.println(matrikelCheck("2013362"));
+		System.out.println(timeCheck("19:22"));
 	}
 	
-	public static boolean matrikel(String Matrikelnummer) {
+	public static boolean timeCheck(String time) {
+		Pattern pattern = Pattern.compile("(([0-1]\\d)|(2[0-3])):[0-5]{2}");
+		Matcher matcher = pattern.matcher(time);
+		
+		if(matcher.matches()) {
+			return true;
+		} else {
+			return false; 
+		}
+	}
+	
+	public static boolean matrikelCheck(String matrikelnummer) {
 		
 			Pattern pattern = Pattern.compile("2[012][12]\\d{4}");
-			Matcher matcher = pattern.matcher(Matrikelnummer);
+			Matcher matcher = pattern.matcher(matrikelnummer);
 			
 			if(matcher.matches()) {
 				return true;

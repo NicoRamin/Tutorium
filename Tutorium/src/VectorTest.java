@@ -65,9 +65,58 @@ class VectorTest {
 	}
 
 	@Test
-	public void encrpytTest() {
-		String test = "B3ei1s5p1ie3l";
-		String output = encrypt(test);
-		Assert.assertEquals(output, "Beispiel"); 
+	public void matrikelCheck1() {
+		Vector v = new Vector();
+		boolean val = v.matrikelCheck("2013362");
+		Assert.assertEquals(val, true);
+	}
+	
+	@Test
+	public void matrikelCheck2() {
+		Vector v = new Vector();
+		boolean val = v.matrikelCheck("2138382");
+		Assert.assertEquals(val, false);
+	}
+	
+	@Test
+	public void matrikelCheck3() {
+		Vector v = new Vector();
+		boolean val = v.matrikelCheck("1918382");
+		Assert.assertEquals(val, false);
+	}
+	
+	@Test
+	public void matrikelCheck4() {
+		Vector v = new Vector();
+		boolean val = v.matrikelCheck("3117282");
+		Assert.assertEquals(val, false);
+	}
+	
+	@Test
+	public void matrikelCheck5() {
+		Vector v = new Vector();
+		boolean val = v.matrikelCheck("22154544");
+		Assert.assertEquals(val, false);
+	}
+	
+	@Test
+	public void timeCheck() {
+		Vector v = new Vector();
+		boolean val = v.timeCheck("17:54");
+		Assert.assertEquals(val, true);
+	}
+	
+	@Test
+	public void timeCheck2() {
+		Vector v = new Vector();
+		boolean val = v.timeCheck("25:30");
+		Assert.assertEquals(val, false);
+	}
+	
+	@Test
+	public void timeCheck3() {
+		Vector v = new Vector();
+		boolean val = v.timeCheck("10:61");
+		Assert.assertEquals(val, false);
 	}
 }
