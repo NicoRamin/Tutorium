@@ -6,9 +6,13 @@ public class Vector {
 
 		int[] vector1 = {5, 6, 7};
 		int[] vector2 = {1, 2, 5};
-		String encode = "H5e6r843r To04d5o8r46ov i4431s1t P2r5o14351fe3s35s8o3r fu15e43r M153a5t35h3e";
 		vectorProduct(vector1, vector2);
+		
+		String encode = "H5e6r843r To04d5o8r46ov i4431s1t P2r5o14351fe3s35s8o3r fu15e43r M153a5t35h3e";
 		System.out.println(encrypt(encode));
+
+		String[] studenten = {"191672@hs-mannheim.de", "221731@stud.hs-mannheim.de"};
+		System.out.println( Arrays.toString( catchMartrikelnummer(studenten) ) );
 	}
 
 	public static void skalar(int[] vector, int skalar) {
