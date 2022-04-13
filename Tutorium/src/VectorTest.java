@@ -19,10 +19,17 @@ class VectorTest {
 		Assert.assertArrayEquals(v.sumVectors(vector1, vector2), sumVector);
 	}
 	
+	@Test
 	public void sumVectorTest2() {
 		int[] sumVector = {49, 32};
 		Vector v = new Vector();
 		Assert.assertArrayEquals(v.sumVectors(vector3, vector4), sumVector);
+	}
+	
+	@Test
+	public void sumVectorTest3() {
+		Vector v = new Vector();
+		Assert.assertArrayEquals(v.sumVectors(vector1, vector3), null);
 	}
 
 	@Test

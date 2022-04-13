@@ -7,10 +7,9 @@ public class Vector {
 
 		int[] vector1 = {5, 6, 7};
 		int[] vector2 = {1, 2, 5};
-		vectorProduct(vector1, vector2);
+		//vectorProduct(vector1, vector2);
 		
-		System.out.println(matrikelCheck("2013362"));
-		System.out.println(timeCheck("19:22"));
+		System.out.println(Arrays.toString(sumVectors(vector1, vector2)));
 	}
 	
 	public static boolean timeCheck(String time) {
@@ -34,10 +33,10 @@ public class Vector {
 		}
 	}
 
-	public int[] sumVectors(int[] vector1, int[] vector2) {
+	public static int[] sumVectors(int[] vector1, int[] vector2) {
 		if (lengthCheck(vector1, vector2) == false) {
 			System.out.println("Nicht die selbe Laenge!");
-			return new int[0];
+			return null;
 		}
 
 		int[] returnVector = new int [vector1.length];
