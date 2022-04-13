@@ -41,7 +41,7 @@ public class Vector {
 			System.out.println(vectorProductThreeD);
 
 		}
-		
+
 	}
 
 
@@ -74,5 +74,13 @@ public class Vector {
 
 	public static String encrypt(String encode){
 		return encode.replaceAll("[0-9]", "");
-	} 
+	}
+
+	public static String[] catchMartrikelnummer(String[] students){
+		String[] studenten = new String[students.length];
+		for (int i = 0; i < students.length; i++){
+			studenten[i] = students[i].split("[0-9]\\@")[0];
+		}
+		return studenten;
+	}
 }
