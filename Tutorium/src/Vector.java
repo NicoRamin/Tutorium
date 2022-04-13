@@ -105,7 +105,7 @@ public class Vector {
 
 	// Berechnet eine Matrix mit dem skalar
 	public static int[][] matrixReloaded(int[][] matrix, int skalar) {
-		// Die Matrix muss 3-Dimensional sein
+		// Die Matrix muss 3-Dimensional sein - sonst return null
 		if (matrix[0].length == 3 && matrix[1].length == 3 ){
 			// Gehe dann durch das erste Array
 			for (int i=0; i<matrix[0].length; i++){
@@ -114,8 +114,9 @@ public class Vector {
 					matrix[i][y] *= skalar;
 				}
 			}
-		}
-		return matrix;
+			return matrix;
+		} else return null; 
+		
 	}
     
 }

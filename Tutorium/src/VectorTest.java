@@ -10,6 +10,8 @@ class VectorTest {
 	
 	int[] vector3 = {12, 24};
 	int[] vector4 = {37, 8};
+	
+	int [][] matrix = {{5, 4, 8}, {11, 13, 2}, {9, 9, 6}};
 
 	//sumVector
 	@Test
@@ -127,5 +129,20 @@ class VectorTest {
 		Assert.assertEquals(val, false);
 	}
 
-	public static int[][] matrixReloaded(int[][] matrix, int skalar) {
+	@Test
+	public void matrixReloaded1() {
+		Vector v = new Vector();
+		int[][] actualMatrix = v.matrixReloaded(matrix, 4);
+		int[][] resultMatrix = {{20, 16, 32}, {44, 52, 8}, {36, 36, 24}};
+		Assert.assertEquals(actualMatrix, resultMatrix);
+	}
+	
+	@Test
+	public void matrixReloaded2() {
+		Vector v = new Vector();
+		int[][] invalidMatrix = {{}};
+		int[][] actualMatrix = v.matrixReloaded(invalidMatrix, 3);
+		Assert.assertEquals(actualMatrix, null);
+
+	}
 }
