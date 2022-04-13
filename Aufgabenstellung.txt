@@ -27,11 +27,15 @@ Zeichnen sie für die Methoden 'skalar', 'lengthCheck' und 'vectorLength' Aktivi
 
 Aufgabe 4:
 -----------
-Gegeben sei folgender String = "H5e6r843r To04d5o8r46ov i4431s1t P2r5o14351fe3s35s8o3r fu15e43r M153a5t35h3e".
-Schreiben sie eine Methode "encrypt", bei welchem Aufruf ein String ohne Zahlen turückgegeben wird. Stichwort Regex.
-Die Methode wird in Main aufgerufen und in der Kommandozeile, dessen Rückgabewert ausgegeben.
+Die Klausur 
+Schreiben sie ein Unterprogramm 'martrikelCheck' vom typ boolean, welches eine Mar.Nummer als valide prüft. Als Parameter empfngt die Methode die Mar.Nummer als String.
+Nur Mar.Nummern welche
 
 Aufgabe 5:
+-----------
+
+
+Aufgabe 6:
 -----------
 
 Schreiben sie Testfälle. Gegeben sind 2x 3D-Vektoren und 2x 2D-Vektoren:
@@ -50,3 +54,13 @@ vector4 = 37, 8
 
 - Testen sie die Vektorlänge des 3D-Vektors 2.
 - Testen sie die Vektorlänge des 2D-Vektors 3.
+
+- Testen sie mit matrikelCheck die Nummer 2013362
+- Testen sie mit matrikelCheck die Nummer 2138382
+- Testen sie mit matrikelCheck die Nummer 1918382
+- Testen sie mit matrikelCheck die Nummer 3117282
+- Testen sie mit matrikelCheck die Nummer 22154544
+
+- Testen sie mit timeCheck die Uhrzeit 17:54
+- Testen sie mit timeCheck die Uhrzeit 25:30
+- Testen sie mit timeCheck die Uhrzeit 10:61
