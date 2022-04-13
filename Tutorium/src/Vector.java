@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.regex.*;
 
 public class Vector {
 	
@@ -8,11 +9,25 @@ public class Vector {
 		int[] vector2 = {1, 2, 5};
 		vectorProduct(vector1, vector2);
 		
-		String encode = "H5e6r843r To04d5o8r46ov i4431s1t P2r5o14351fe3s35s8o3r fu15e43r M153a5t35h3e";
-		System.out.println(encrypt(encode));
+		//String encode = "H5e6r843r To04d5o8r46ov i4431s1t P2r5o14351fe3s35s8o3r fu15e43r M153a5t35h3e";
+		//System.out.println(encrypt(encode));
 
-		String[] studenten = {"191672@hs-mannheim.de", "221731@stud.hs-mannheim.de"};
-		System.out.println( Arrays.toString( catchMartrikelnummer(studenten) ) );
+		//String[] studenten = {"191672@hs-mannheim.de", "221731@stud.hs-mannheim.de"};
+		//System.out.println( Arrays.toString( catchMatrikelnummer(studenten) ) );
+		
+		System.out.println(matrikel("2013362"));
+	}
+	
+	public static boolean matrikel(String Matrikelnummer) {
+		
+			Pattern pattern = Pattern.compile("2[012][12]\\d{4}");
+			Matcher matcher = pattern.matcher(Matrikelnummer);
+			
+			if(matcher.matches()) {
+				return true;
+			} else {
+				return false;
+			}
 	}
 
 	public static void skalar(int[] vector, int skalar) {
@@ -80,11 +95,4 @@ public class Vector {
 		return encode.replaceAll("[0-9]", "");
 	}
 
-	public static String[] catchMartrikelnummer(String[] students){
-		String[] studenten = new String[students.length];
-		for (int i = 0; i < students.length; i++){
-			studenten[i] = students[i].split("[0-9]\\@")[0];
-		}
-		return studenten;
-	}
 }
