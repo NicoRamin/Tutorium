@@ -9,12 +9,6 @@ public class Vector {
 		int[] vector2 = {1, 2, 5};
 		vectorProduct(vector1, vector2);
 		
-		//String encode = "H5e6r843r To04d5o8r46ov i4431s1t P2r5o14351fe3s35s8o3r fu15e43r M153a5t35h3e";
-		//System.out.println(encrypt(encode));
-
-		//String[] studenten = {"191672@hs-mannheim.de", "221731@stud.hs-mannheim.de"};
-		//System.out.println( Arrays.toString( catchMatrikelnummer(studenten) ) );
-		
 		System.out.println(matrikelCheck("2013362"));
 		System.out.println(timeCheck("19:22"));
 	}
@@ -23,11 +17,7 @@ public class Vector {
 		Pattern pattern = Pattern.compile("(([0-1]\\d)|(2[0-3])):[0-5]{2}");
 		Matcher matcher = pattern.matcher(time);
 		
-		if(matcher.matches()) {
-			return true;
-		} else {
-			return false; 
-		}
+		return matcher.matches();
 	}
 	
 	public static boolean matrikelCheck(String matrikelnummer) {
@@ -35,11 +25,7 @@ public class Vector {
 			Pattern pattern = Pattern.compile("2[012][12]\\d{4}");
 			Matcher matcher = pattern.matcher(matrikelnummer);
 			
-			if(matcher.matches()) {
-				return true;
-			} else {
-				return false;
-			}
+			return matcher.matches();
 	}
 
 	public static void skalar(int[] vector, int skalar) {
@@ -101,10 +87,6 @@ public class Vector {
 			sum += Math.pow(vector[i], 2);
 		}
 		return Math.sqrt(sum);
-	}
-
-	public static String encrypt(String encode){
-		return encode.replaceAll("[0-9]", "");
 	}
 
 }
