@@ -126,4 +126,6 @@ class VectorTest {
 		boolean val = v.timeCheck("10:61");
 		Assert.assertEquals(val, false);
 	}
+
+	public static int[][] matrixReloaded(int[][] matrix, int skalar) {
 }

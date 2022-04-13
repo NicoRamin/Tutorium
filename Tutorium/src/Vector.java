@@ -102,5 +102,20 @@ public class Vector {
 		// return true oder false
 		return matcher.matches();
 	}
+
+	// Berechnet eine Matrix mit dem skalar
+	public static int[][] matrixReloaded(int[][] matrix, int skalar) {
+		// Die Matrix muss 3-Dimensional sein
+		if (matrix[0].length == 3 && matrix[1].length == 3 ){
+			// Gehe dann durch das erste Array
+			for (int i=0; i<matrix[0].length; i++){
+				// Gehe zuerst durch das zweite Array
+				for (int y=0; y<matrix[1].length; y++){
+					matrix[i][y] *= skalar;
+				}
+			}
+		}
+		return matrix;
+	}
     
 }
